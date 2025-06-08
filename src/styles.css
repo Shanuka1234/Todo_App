@@ -1,0 +1,171 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #e0e0e0;
+    transition: background-color 0.3s ease-in-out;
+    
+}
+
+.app-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    width: 100vw; /* Ensure full screen width */
+    padding: 20px;
+    
+}
+
+
+.vite-project {
+    background: rgba(255, 255, 255, 0.15);
+    backdrop-filter: blur(20px);
+    border-radius: 20px;
+    padding: 30px;
+    width: 90%;
+    max-width: 500px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+    transition: background-color 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.header h1 {
+    color: #333;
+    font-size: 1.8rem;
+}
+
+.toggle-button {
+    background-color: #333;
+    color: white;
+    border: none;
+    padding: 8px 12px;
+    border-radius: 10px;
+    cursor: pointer;
+    font-size: 1rem;
+    transition: background-color 0.3s ease-in-out, transform 0.2s ease-in-out;
+}
+
+.toggle-button:hover {
+    background-color: #666;
+}
+
+.input-section {
+    padding: 10px;
+    border: 2px solid #ccc;
+    border-radius: 12px;
+    background-color: white;
+    color: black;
+    transition: border-color 0.3s ease-in-out, color 0.3s ease-in-out;
+}
+
+.todo-input {
+    border: 2px solid #007bff;
+    color: #333;
+}
+
+.add-btn {
+    margin-left: 10px;
+    padding: 10px 20px;
+    border: none;
+    background-color: #007bff;
+    color: white;
+    border-radius: 12px;
+    cursor: pointer;
+    transition: background-color 0.3s ease-in-out;
+}
+
+.add-btn:hover {
+    background-color: #0056b3;
+}
+
+.todo-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 12px;
+    margin: 10px;
+    background-color: #f9f9f9;
+    border-radius: 12px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    transition: transform 0.2s ease-in-out;
+}
+
+.todo-item:hover {
+    transform: scale(1.03);
+}
+
+.delete-btn {
+    background: transparent;
+    color: rgb(202, 49, 49);
+    border: none;
+    cursor: pointer;
+    font-size: 1.2rem;
+    transition: transform 0.2s ease-in-out;
+}
+
+.delete-btn:hover {
+    transform: scale(1.2);
+}
+
+/* Dark Mode Enhancements */
+.dark-mode {
+    background-color: #0a0a0a;
+}
+
+.dark-mode .vite-project {
+    background: rgba(30, 30, 30, 0.9);
+}
+
+.dark-mode h1 {
+    color: #f0f0f0;
+}
+
+.dark-mode .todo-input {
+    background-color: #333;
+    color: white;
+    border-color: #555;
+}
+
+.dark-mode .add-btn {
+    background-color: #007bff;
+    color: white;
+}
+
+.dark-mode .todo-item {
+    background-color: #0056b3;
+}
+
+.dark-mode .add-btn:hover {
+    background-color: #0056b3;
+}
+
+.dark-mode .toggle-button {
+    background-color: #f0f0f0;
+    color: #333;
+}
+
+.dark-mode .todo-item {
+    background: rgba(50, 50, 50);
+    color: white;
+}
+
+todo.text{
+    background: #b98585;
+}
+
+.todo-item.new {
+    color: green;
+    font-weight: bold;
+}
