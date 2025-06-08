@@ -24,6 +24,8 @@
   "preview": "vite preview",
   "predeploy": "npm run build",
   "deploy": "gh-pages -d dist"
+    "predeploy": "npm run build",
+  "deploy": "gh-pages -d dist"
 }
 
   "devDependencies": {
