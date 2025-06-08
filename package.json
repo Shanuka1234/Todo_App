@@ -17,17 +17,6 @@
     "react": "^19.1.0",
     "react-dom": "^19.1.0"
   },
-  "scripts": {
-  "dev": "vite",
-  "build": "vite build",
-  "lint": "eslint .",
-  "preview": "vite preview",
-  "predeploy": "npm run build",
-  "deploy": "gh-pages -d dist"
-    "predeploy": "npm run build",
-  "deploy": "gh-pages -d dist"
-}
-
   "devDependencies": {
     "@eslint/js": "^9.25.0",
     "@types/react": "^19.1.2",
@@ -40,5 +29,5 @@
     "vite": "^6.3.5",
     "gh-pages": "^5.0.0"
   }
-  
 }
+
